@@ -1,0 +1,15 @@
+alfabeto = a, b, c
+nEstados = 8
+inicial = q0
+final = q3
+
+entradas = [
+    a q7, b q7, c q1      # q0
+    a q7, b q2, c q7      # q1
+    a q3, b q7, c q7      # q2
+    a q6, b q6, c q4      # q3*
+    a q6, b q5, c q4      # q4
+    a q3, b q6, c q4      # q5
+    a q6, b q6, c q4      # q6
+    a q7, b q7, c q7      # q7
+]
