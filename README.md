@@ -18,7 +18,7 @@ python index.py
 Você deverá passar as informações referentes do autômato que deseja testar na ordem e em um padrão específico:
 
 ### 1. Alfabeto
-A lista de caracteres que o seu autômato aceita (ele não faz verificação de entrada, ou seja, colocar input diferentes do especificado aqui pode causar erros). O alfabeto deve ser adicionado na seguinte estrutura:
+A lista de caracteres que o seu autômato aceita. O alfabeto deve ser adicionado na seguinte estrutura:
 ```
 a, b, c, d
 ```
@@ -46,7 +46,7 @@ a q3, b q7, c q1
 Ou seja, quando o estado `q0` recebe `a` ele vai para `q3` e assim por diante.
 
 ### 6. Testar as palavras
-Após toda essa configuração, basta inserir as palavras que deseja testar e o código irá realizar a verificação com base nas informações adicionadas pelo usuário. Quando desejar sair do programa, basta inserir `SAIR` para encerrar.
+Após toda essa configuração, basta inserir as palavras que deseja testar e o código irá realizar a verificação com base nas informações adicionadas pelo usuário. Quando desejar sair do programa, basta inserir `SAIR` para encerrar. Não houve necessidade de implementar verificação de entrada (especificado pelo professor).
 <br>
 
 Se preferir, você encontrará na pasta do projeto o arquivo `caso_de_teste.txt` que contém um autômato finito determinístico, basta adicionar as informações no programa e testar.
