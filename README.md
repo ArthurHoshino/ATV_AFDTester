@@ -14,7 +14,7 @@ Com isso, basta executar o arquivo `index.py`:
 python index.py
 ```
 
-## 🧑‍💻 Utilizando o script
+## ▶️ Utilizando o script
 Você deverá passar as informações referentes do autômato que deseja testar na ordem e em um padrão específico:
 
 ### 1. Alfabeto
@@ -49,4 +49,10 @@ Ou seja, quando o estado `q0` recebe `a` ele vai para `q3` e assim por diante.
 Após toda essa configuração, basta inserir as palavras que deseja testar e o código irá realizar a verificação com base nas informações adicionadas pelo usuário. Quando desejar sair do programa, basta inserir `SAIR` para encerrar. Não houve necessidade de implementar verificação de entrada (especificado pelo professor).
 <br>
 
-Se preferir, você encontrará na pasta do projeto o arquivo `caso_de_teste.txt` que contém um autômato finito determinístico, basta adicionar as informações no programa e testar.
+Se preferir, você pode utilizar o autômato já existente no programa selecionando a opção `1` no menu ou você encontrará na pasta do projeto o arquivo `caso_de_teste.txt` que contém o mesmo autômato, caso queira testar a inserção se um novo autômato.
+
+---
+## 🧑‍💻 Integrantes
+- Arthur Osaka Hoshino
+- Bruno Koji Nakao
+- Fernando Manso Isaac
