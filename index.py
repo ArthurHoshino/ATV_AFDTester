@@ -3,18 +3,19 @@ import tabulate, pandas, os
 def limpar():
     os.system('clear')
 
-def imprimirAutomatoTable():
+def imprimirAutomatoTable(inicial, final):
     # Impressao da tabela do automato formatada para melhor visualizacao
     limpar()
     print()
     df = pandas.DataFrame(estados)
     print(tabulate.tabulate(df.T, headers="keys", tablefmt="pretty"))
+    print(f'Estado inicial: {inicial}\nEstados finais: {final}')
 
 def testarPalavras():
     # TESTE DE PALAVRAS
     print(f'\nDigite "SAIR" para encerrar a entrada de palavras')
     while True:
-        palavra = input(f"\nDigite uma palavra: ")
+        palavra = input(f"\nDigite uma palavra: ").strip()
 
         if palavra == 'SAIR':
             break
@@ -55,8 +56,7 @@ Selecione uma opção:\n
 opcao = int(selecao) if selecao.isdigit() else 3
 
 if (int(opcao) == 1):
-    imprimirAutomatoTable()
-    print('Estado inicial: q0\nEstado final: q3')
+    imprimirAutomatoTable(inicial, finais)
     testarPalavras()
 elif (int(opcao) == 2):
     # GET ALFABETO
